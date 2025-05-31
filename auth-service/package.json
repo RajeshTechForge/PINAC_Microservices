@@ -1,0 +1,16 @@
+{
+  "name": "auth-service",
+  "version": "1.0.0",
+  "description": "Firebase JWT Auth Service for API Gateway",
+  "main": "auth-service.js",
+  "scripts": {
+    "start": "node auth-service.js",
+    "dev": "nodemon auth-service.js"
+  },
+  "dependencies": {
+    "jose": "^6.0.11"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
