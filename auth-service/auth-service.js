@@ -10,13 +10,12 @@ const JWKS = createRemoteJWKSet(
 
 const server = http.createServer(async (req, res) => {
   if (req.method !== "GET" && req.method !== "POST") {
-    res.writeHead(405, { "Content-Type": "application/json" });
-    res.end(
-      JSON.stringify({
-        error: "METHOD_NOT_ALLOWED",
-        message: "Only GET and POST methods are allowed",
-      })
-    );
+    res.writeHead(405, {
+      "Content-Type": "application/json",
+      "X-Auth-Error": "METHOD_NOT_ALLOWED",
+      "X-Auth-Message": "Only GET and POST methods are allowed",
+    });
+    res.end();
     return;
   }
 
@@ -26,13 +25,9 @@ const server = http.createServer(async (req, res) => {
     res.writeHead(401, {
       "Content-Type": "application/json",
       "X-Auth-Error": "MISSING_TOKEN",
+      "X-Auth-Message": "Authorization header with Bearer token is required",
     });
-    res.end(
-      JSON.stringify({
-        error: "MISSING_TOKEN",
-        message: "Authorization header with Bearer token is required",
-      })
-    );
+    res.end();
     return;
   }
 
@@ -87,14 +82,9 @@ const server = http.createServer(async (req, res) => {
     res.writeHead(statusCode, {
       "Content-Type": "application/json",
       "X-Auth-Error": errorCode,
+      "X-Auth-Message": errorMessage,
     });
-    res.end(
-      JSON.stringify({
-        error: errorCode,
-        message: errorMessage,
-        timestamp: new Date().toISOString(),
-      })
-    );
+    res.end();
   }
 });
 
