@@ -1,6 +1,7 @@
 {
   "name": "auth-service",
   "version": "1.0.0",
+  "author": "RajeshTechForge",
   "description": "Firebase JWT Auth Service for API Gateway",
   "main": "auth-service.js",
   "scripts": {
