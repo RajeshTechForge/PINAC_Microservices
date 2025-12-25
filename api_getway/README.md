@@ -1,9 +1,8 @@
-This project demonstrates _microservices architecture_ of **PINAC Workspace** using Google Cloud Run, NGINX as an API Gateway, and a custom authentication service for Firebase JWT verification. It provides secure, authenticated access to downstream services such as AI response and web search APIs.
+This project demonstrates API Gateway using NGINX and a custom authentication service for Firebase JWT verification. It provides secure, authenticated access to downstream services such as AI response and web search APIs.
 
-## Project Structure
+## Structure
 
 ```
-.
 ├── deploy.sh
 ├── api-gateway/
 │   ├── Dockerfile
