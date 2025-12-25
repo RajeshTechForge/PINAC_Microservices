@@ -37,8 +37,8 @@ This project demonstrates _microservices architecture_ of **PINAC Workspace** us
 1. **Clone the repository**
 
    ```sh
-   git clone https://github.com/your-username/your-repo.git
-   cd your-repo
+   git clone https://github.com/RajeshTechForge/PINAC_Microservices.git
+   cd PINAC_Microservices/api_getway
    ```
 
 2. **Configure Environment Variables**
@@ -81,10 +81,10 @@ This project demonstrates _microservices architecture_ of **PINAC Workspace** us
 - Update backend service URLs in `nginx.conf` as needed.
 - Extend `auth-service` to include more user info or custom logic.
 
-## License
-
-This project is licensed under the MIT License.
-
 ---
 
-**Note:** This project is for demonstration purposes. For production use, review security settings and adapt to your requirements.
+<div align="center">
+
+_This project is for demonstration purposes. For production use, review security settings and adapt to your requirements._
+
+</div>

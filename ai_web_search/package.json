@@ -1,0 +1,18 @@
+{
+  "name": "pinac-ai-search",
+  "version": "1.0.0",
+  "description": "API server that provides AI based web search capabilities using Tavily API.",
+  "devDependencies": {
+    "typescript": "5.8.3",
+    "wrangler": "4.12.0"
+  },
+  "scripts": {
+    "cf-typegen": "wrangler types",
+    "check": "tsc && wrangler deploy --dry-run",
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev"
+  },
+  "dependencies": {
+    "@langchain/tavily": "^0.1.1"
+  }
+}
