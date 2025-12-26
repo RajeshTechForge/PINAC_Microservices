@@ -28,7 +28,7 @@ The system is composed of three main components:
     *   **Cloud LLM:** Provides direct access to advanced Large Language Models (Google Gemma 2).
     *   **AI Web Search:** Combines Tavily search with AI to provide intelligent, context-aware web search results.
 
-<img src="https://github.com/pinacai/PINAC_Workspace/blob/main/assets/system_architechture.png" alt="system design">
+<img src="https://github.com/RajeshTechForge/PINAC_Workspace/blob/main/assets/system_architechture.png" alt="system design">
 
 ## 🧩 Services Breakdown
 
